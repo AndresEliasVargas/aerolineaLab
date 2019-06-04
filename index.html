@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aerolinea Andrés Vargas</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <h1>Aerolinea</h1>
+        <p>Indique la cantidad de Rutas a las que les va a ingresar datos</p>
+
+        <form class="clearFix">
+            <div class="tamaño floatLeft">
+                <div>
+                        <label for="txtRutas">Rutas: </label>
+                        <input type="text" id="txtRutas" min="0">
+                    </div>
+        
+                    <div>
+                        <p>Favor de indicar el monto de los tiquetes</p>
+                        <label for="txtPreferencial">Preferencial: </label>
+                        <input type="text" id="txtPreferencial" min="0">
+                    </div>
+        
+                    <div>
+                        <label for="txtMenorEdad">Menor de Edad: </label>
+                        <input type="text" id="txtMenorEdad" min="0">
+                    </div>
+        
+                    <div>
+                        <label for="txtPrimeraClase">Primera Clase: </label>
+                        <input type="text" id="txtPrimeraClase" min="0">
+                    </div>
+        
+                    <div>
+                        <label for="txtRegular">Regular: </label>
+                        <input type="text" id="txtRegular" min="0">
+                    </div>
+            </div>
+
+            <div class="floatLeft cajonBoton">
+                <button type="button" id="btnBoton">Verificar Vuelos</button>
+            </div>
+        </form>
+
+        <div class="salidas">
+            <div>
+                <label for="txtCantTotalPasajeros">Cantidad total de pasajeros: </label>
+                <output id="txtCantTotalPasajeros"></output>
+            </div>
+    
+            <div>
+                <label for="txtRutaMasVuelos">La cantidad de vuelos más grande en una ruta: </label>
+                <output id="txtRutaMasVuelos"></output>
+            </div>
+    
+            <div>
+                <label for="txtMontoPorRuta">Ingreso total por ruta: </label>
+                <output id="txtMontoPorRuta"></output>
+            </div>
+            
+            <div>
+                <p>Total de los tiquetes por ruta:</p>
+                <div>
+                    <label for="txtTiquetePreferencial"></label>
+                    <output id="txtTiquetePreferencial"></output>
+                </div>
+                <div>
+                    <label for="txtTiqueteMenor"></label>
+                    <output id="txtTiqueteMenor"></output>
+                </div>
+                <div>
+                    <label for="txtTiquetePrimeraClase"></label>
+                    <output id="txtTiquetePrimeraClase"></output>
+                </div>
+                <div>
+                    <label for="txtTiqueteRegular"></label>
+                    <output id="txtTiqueteRegular"></output>
+                </div>
+            </div>
+    
+            <div>
+                <label for="txtTotalKilometros">Monto total de kilometros recorridos por la aerolinea: </label>
+                <output id="txtTotalKilometros"></output>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/servicio.js"></script>
+    <script src="js/controlador.js"></script>
+</body>
+</html>
